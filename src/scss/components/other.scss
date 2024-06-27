@@ -1,0 +1,39 @@
+@use "../utils" as *;
+@use "../globals" as *;
+
+// Author Component
+.author {
+  display: flex;
+  align-items: center;
+  &__img {
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  &__name {
+    padding-left: rem(20);
+    h2 {
+      font-size: rem(12);
+    }
+    p {
+      font-size: rem(10);
+    }
+  }
+}
+
+// Heading Component
+.heading {
+  font-size: rem(20);
+  margin-top: rem(20);
+}
+
+// Detail Component
+.detail {
+  margin-top: rem(20);
+  &--light-grey {
+    color: var(--color-light-grey);
+  }
+
+  &--grey {
+    color: var(--color-grey);
+  }
+}
